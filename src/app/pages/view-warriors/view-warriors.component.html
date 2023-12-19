@@ -1,0 +1,29 @@
+
+<div class="content">
+    <div class="titleCntr">
+        <h1>View Characters</h1>
+    </div>
+    <!-- <div class="testData">{{res.data[0].class}}</div> -->
+    <!-- @if(res.data[0].class) {
+        <div>{{res.data[0].class}}</div>
+    } -->
+    @defer {
+        <div>{{res.data[0].class}}</div>
+    }
+
+
+
+    
+    <button (click)="addCharacterToDb()">Add Character</button>
+
+    <div #showTable>Show table</div>
+    @defer (on hover(showTable)) {
+        <app-table></app-table>
+    } @placeholder {
+        <div>Your characters will show up here</div>
+    } @loading { 
+        <div>Loading...</div>
+    } @error {
+        <div>Error: something went wrong, try refreshing the page or reaching out to our support team</div>
+    }
+</div>

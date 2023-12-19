@@ -1,0 +1,52 @@
+.navBar {
+    height: 100vh;
+    width: 10vw;
+    background-color: white;
+    margin-right: 20px;
+    box-shadow: 5px 5px 10px rgba(255, 0, 0, 0.8);
+    background-color: #343A3F;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        li {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 6rem;
+            border-bottom: 2px solid #2B2F35;
+            width: 100%;
+            mat-icon {
+                margin-left: 5px;
+            }
+        }
+        li:hover {
+            cursor: pointer;
+            background-color: gray;
+        }
+    }
+}
+
+
+.navigateNext {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid #2B2F35;
+    padding: 1rem 0 1rem 0;
+    mat-icon {
+        transform: scale(2);
+        transform: rotate(180deg);
+    };
+
+    &:hover {
+        cursor: pointer;
+        background-color: gray;
+    }
+}
